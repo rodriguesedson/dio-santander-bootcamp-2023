@@ -3,11 +3,12 @@ package me.dio;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@OpenAPIDefinition(servers = { @Server(url = "/", description = "Default Server URL")})
 @SpringBootApplication
-public class SantanderBootcamp2023Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SantanderBootcamp2023Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
